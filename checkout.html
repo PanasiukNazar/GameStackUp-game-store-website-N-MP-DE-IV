@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Game Stack Up</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!--===============================================================================================-->
+        <link rel="icon" type="image/png" href="images/icons/favicon.png" />
+        <!--===============================================================================================-->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="vendor/bootstrap/css/bootstrap.min.css"
+        />
+        <!--===============================================================================================-->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="fonts/font-awesome-4.7.0/css/font-awesome.min.css"
+        />
+        <!--===============================================================================================-->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="fonts/iconic/css/material-design-iconic-font.min.css"
+        />
+        <!--===============================================================================================-->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="fonts/linearicons-v1.0.0/icon-font.min.css"
+        />
+        <!--===============================================================================================-->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="vendor/animate/animate.css"
+        />
+        <!--===============================================================================================-->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="vendor/css-hamburgers/hamburgers.min.css"
+        />
+        <!--===============================================================================================-->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="vendor/animsition/css/animsition.min.css"
+        />
+        <!--===============================================================================================-->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="vendor/select2/select2.min.css"
+        />
+        <!--===============================================================================================-->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="vendor/daterangepicker/daterangepicker.css"
+        />
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
+        <!--===============================================================================================-->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="vendor/MagnificPopup/magnific-popup.css"
+        />
+        <!--===============================================================================================-->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="vendor/perfect-scrollbar/perfect-scrollbar.css"
+        />
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="css/util.css" />
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <style>
+            /* Checkout Section */
+            .shop.checkout.section {
+                background-color: #ffffff; /* White background */
+                color: #1f1f33; /* Dark text for contrast */
+                padding: 40px 0;
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+                border-radius: 10px;
+                box-shadow: 0 0 18px rgba(74, 74, 159, 0.1);
+            }
+
+            .checkout-form h2 {
+                font-size: 2rem;
+                font-weight: 700;
+                margin-bottom: 15px;
+                color: #4a4a9f; /* Dark purple-ish text */
+                text-transform: uppercase;
+                letter-spacing: 1.2px;
+            }
+
+            .checkout-form p {
+                font-size: 1rem;
+                margin-bottom: 25px;
+                color: #555577;
+            }
+
+            .checkout-form .form-group {
+                margin-bottom: 20px;
+            }
+
+            .checkout-form label {
+                display: block;
+                font-weight: 600;
+                margin-bottom: 8px;
+                color: #3a3a66;
+            }
+
+            .checkout-form label span {
+                color: #ff7070;
+                margin-left: 3px;
+            }
+
+            .checkout-form input[type="text"],
+            .checkout-form input[type="email"],
+            .checkout-form input[type="tel"],
+            .checkout-form select {
+                width: 100%;
+                padding: 10px 12px;
+                border-radius: 6px;
+                border: 1.8px solid #ccc;
+                background-color: #fafafa;
+                color: #333;
+                font-size: 1rem;
+                transition: border-color 0.3s ease;
+            }
+
+            .checkout-form input[type="text"]:focus,
+            .checkout-form input[type="email"]:focus,
+            .checkout-form input[type="tel"]:focus,
+            .checkout-form select:focus {
+                outline: none;
+                border-color: #6a6aff;
+                background-color: #f0f0ff;
+                color: #000;
+            }
+
+            .checkout-form select {
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+                background-image: url('data:image/svg+xml;utf8,<svg fill="%23666" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+                background-repeat: no-repeat;
+                background-position: right 12px center;
+                background-size: 16px;
+                cursor: pointer;
+            }
+
+            /* Button Widget */
+            .single-widget.get-button .content {
+                text-align: left;
+                margin-top: 30px;
+            }
+
+            .single-widget.get-button .btn {
+                background-color: #4a4a9f;
+                color: #fff;
+                font-weight: 700;
+                padding: 14px 36px;
+                border-radius: 8px;
+                border: none;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+                font-size: 1.1rem;
+                display: inline-block;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+
+            .single-widget.get-button .btn:hover {
+                background-color: #6a6adf;
+                color: #fff;
+            }
+
+            /* Order Details */
+            .order-details .single-widget {
+                background-color: #f8f8ff;
+                border-radius: 8px;
+                padding: 20px 25px;
+                margin-bottom: 25px;
+                box-shadow: 0 0 12px rgba(74, 74, 159, 0.1);
+            }
+
+            .order-details h2 {
+                font-size: 1.6rem;
+                font-weight: 700;
+                margin-bottom: 15px;
+                color: #4a4a9f;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+
+            .order-details ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            .order-details ul li.last {
+                font-size: 1.3rem;
+                font-weight: 700;
+                color: #3a3a66;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .order-details ul li.last span {
+                background-color: #4a4a9f;
+                padding: 6px 14px;
+                border-radius: 6px;
+                font-family: monospace;
+                color: #fff;
+            }
+
+            /* Checkbox Style */
+            .checkbox label {
+                cursor: pointer;
+                font-weight: 600;
+                color: #555577;
+                user-select: none;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+
+            .checkbox input[type="checkbox"] {
+                width: 18px;
+                height: 18px;
+                cursor: pointer;
+                border-radius: 4px;
+                border: 1.5px solid #aaaadd;
+                background-color: #fafaff;
+                transition: background-color 0.3s ease, border-color 0.3s ease;
+            }
+
+            .checkbox input[type="checkbox"]:checked {
+                background-color: #6a6aff;
+                border-color: #6a6aff;
+            }
+
+            /* Responsive */
+            @media (max-width: 991px) {
+                .checkout-form h2,
+                .order-details h2 {
+                    font-size: 1.5rem;
+                }
+                .single-widget.get-button .btn {
+                    width: 100%;
+                    padding: 14px 0;
+                    font-size: 1rem;
+                }
+                .order-details ul li.last {
+                    font-size: 1.1rem;
+                }
+            }
+        </style>
+        <!--===============================================================================================-->
+    </head>
+    <body class="animsition">
+        <!-- Header -->
+        <header class="header-v4" style="border-bottom: 1px solid gray">
+            <!-- Header desktop -->
+            <div class="container-menu-desktop trans-03">
+                <div class="wrap-menu-desktop">
+                    <nav class="limiter-menu-desktop p-l-45">
+                        <!-- Logo desktop -->
+                        <a href="#" class="logo">
+                            <h3 style="color: #333; text-transform: uppercase">
+                                Game Stack Up
+                            </h3>
+                        </a>
+
+                        <!-- Menu desktop -->
+                        <div class="menu-desktop">
+                            <ul class="main-menu">
+                                <li>
+                                    <a href="index.html">Startseite</a>
+                                </li>
+
+                                <li>
+                                    <a href="product.html">Shop</a>
+                                </li>
+
+                                <li>
+                                    <a href="about.html">Über uns</a>
+                                </li>
+
+                                <li>
+                                    <a href="contact.html">Kontakt</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Icon header -->
+                        <div class="wrap-icon-header flex-w flex-r-m mr-3">
+                            <div
+                                class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart"
+                                data-notify="0"
+                            >
+                                <a href="cart.html">
+                                    <i class="zmdi zmdi-shopping-cart"></i>
+                                </a>
+                            </div>
+
+                            <a
+                                href="favorite.html"
+                                class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti"
+                                data-notify="0"
+                            >
+                                <i class="zmdi zmdi-favorite-outline"></i>
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- Header Mobile -->
+            <div class="wrap-header-mobile">
+                <!-- Logo moblie -->
+                <div class="logo-mobile">
+                    <a href="index.html"
+                        ><h4
+                            style="
+                                text-transform: uppercase;
+                                color: #333;
+                                font-size: 20px;
+                            "
+                        >
+                            Game Stack Up
+                        </h4></a
+                    >
+                </div>
+
+                <!-- Icon header -->
+                <div class="wrap-icon-header flex-w flex-r-m mr-3">
+                    <div
+                        class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart"
+                        data-notify="2"
+                    >
+                        <i class="zmdi zmdi-shopping-cart"></i>
+                    </div>
+
+                    <a
+                        href="#"
+                        class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti"
+                        data-notify="0"
+                    >
+                        <i class="zmdi zmdi-favorite-outline"></i>
+                    </a>
+                </div>
+
+                <!-- Button show menu -->
+                <div class="btn-show-menu-mobile hamburger hamburger--squeeze">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Menu Mobile -->
+            <div class="menu-mobile">
+                <ul class="main-menu-m">
+                    <li>
+                        <a href="index.html">Startseite</a>
+                        <span class="arrow-main-menu-m">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </span>
+                    </li>
+
+                    <li>
+                        <a href="product.html">Shop</a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">Über uns</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- Start Checkout -->
+        <section class="shop checkout section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-12">
+                        <div class="checkout-form">
+                            <h2>Bezahlung</h2>
+                            <p>
+                                Registrieren Sie sich für einen schnelleren
+                                Bestellvorgang.
+                            </p>
+                            <!-- Form -->
+                            <form
+                                class="form"
+                                method="GET"
+                                action="thanks.html"
+                            >
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <div class="form-group">
+                                            <label>Vorname<span>*</span></label>
+                                            <input
+                                                type="text"
+                                                name="firstName"
+                                                placeholder=""
+                                                required
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <div class="form-group">
+                                            <label
+                                                >Nachname<span>*</span></label
+                                            >
+                                            <input
+                                                type="text"
+                                                name="lastName"
+                                                placeholder=""
+                                                required
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <div class="form-group">
+                                            <label
+                                                >E-Mail-Adresse<span
+                                                    >*</span
+                                                ></label
+                                            >
+                                            <input
+                                                type="email"
+                                                name="email"
+                                                placeholder=""
+                                                required
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <div class="form-group">
+                                            <label
+                                                >Telefonnummer<span
+                                                    >*</span
+                                                ></label
+                                            >
+                                            <input
+                                                type="tel"
+                                                name="phone"
+                                                placeholder=""
+                                                required
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <div class="form-group">
+                                            <label>Region<span>*</span></label>
+                                            <select name="region" id="region">
+                                                <option
+                                                    value="north-america"
+                                                    selected
+                                                >
+                                                    Nordamerika
+                                                </option>
+                                                <option value="europe">
+                                                    Europa
+                                                </option>
+                                                <option value="asia">
+                                                    Asien
+                                                </option>
+                                                <option value="australia">
+                                                    Australien
+                                                </option>
+                                                <option value="other">
+                                                    Andere
+                                                </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <div class="form-group">
+                                            <label
+                                                >Adresse 1<span>*</span></label
+                                            >
+                                            <input
+                                                type="text"
+                                                name="address1"
+                                                placeholder=""
+                                                required
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <div class="form-group">
+                                            <label>Adresse 2</label>
+                                            <input
+                                                type="text"
+                                                name="address2"
+                                                placeholder=""
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Button Widget -->
+                                <div class="single-widget get-button">
+                                    <div class="content">
+                                        <a class="button">
+                                            <button
+                                                class="btn btn-primary py-4 px-lg-5 d-lg-block"
+                                                type="submit"
+                                                data-store-el="cartEmptyDisabled"
+                                            >
+                                                Bestellung abschicken
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--/ End Button Widget -->
+                            </form>
+                            <!--/ End Form -->
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-12">
+                        <div class="order-details">
+                            <!-- Order Widget -->
+                            <div class="single-widget">
+                                <h2>BESTELLÜBERSICHT</h2>
+                                <div class="content">
+                                    <ul>
+                                        <li class="last">
+                                            Gesamtbetrag
+                                            <span>
+                                                <span
+                                                    data-store-el="cartTotal"
+                                                ></span
+                                                >€
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--/ End Order Widget -->
+                            <!-- Order Widget -->
+                            <div class="single-widget">
+                                <h2>Zahlungsmethode</h2>
+                                <div class="content">
+                                    <div class="checkbox">
+                                        <label
+                                            class="checkbox-inline"
+                                            for="payment-cod"
+                                        >
+                                            <input
+                                                name="paymentMethod"
+                                                id="payment-cod"
+                                                type="checkbox"
+                                            />
+                                            Zahlung bei Lieferung
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/ End Order Widget -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--/ End Checkout -->
+
+        <!-- Footer -->
+        <footer class="bg3 p-t-75 p-b-32">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-lg-3 p-b-50">
+                        <h4 class="stext-301 cl0 p-b-30">Kategorien</h4>
+
+                        <ul>
+                            <li class="p-b-10">
+                                <a
+                                    href="#"
+                                    class="stext-107 cl7 hov-cl1 trans-04"
+                                >
+                                    PC-Spiele
+                                </a>
+                            </li>
+
+                            <li class="p-b-10">
+                                <a
+                                    href="#"
+                                    class="stext-107 cl7 hov-cl1 trans-04"
+                                >
+                                    Konsolen-Spiele
+                                </a>
+                            </li>
+
+                            <li class="p-b-10">
+                                <a
+                                    href="#"
+                                    class="stext-107 cl7 hov-cl1 trans-04"
+                                >
+                                    Zubehör & Controller
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-3 p-b-50">
+                        <h4 class="stext-301 cl0 p-b-30">Hilfe</h4>
+
+                        <ul>
+                            <li class="p-b-10">
+                                <a
+                                    href="index.html"
+                                    class="stext-107 cl7 hov-cl1 trans-04"
+                                >
+                                    Startseite
+                                </a>
+                            </li>
+
+                            <li class="p-b-10">
+                                <a
+                                    href="terms-of-use.html"
+                                    class="stext-107 cl7 hov-cl1 trans-04"
+                                >
+                                    Nutzungsbedingungen
+                                </a>
+                            </li>
+
+                            <li class="p-b-10">
+                                <a
+                                    href="cookie-policy.html"
+                                    class="stext-107 cl7 hov-cl1 trans-04"
+                                >
+                                    Cookie-Richtlinie
+                                </a>
+                            </li>
+
+                            <li class="p-b-10">
+                                <a
+                                    href="privacy-policy.html"
+                                    class="stext-107 cl7 hov-cl1 trans-04"
+                                >
+                                    Datenschutz
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-3 p-b-50">
+                        <h4 class="stext-301 cl0 p-b-30">KONTAKT</h4>
+
+                        <p class="stext-107 cl7 size-201">
+                            Fragen? Besuchen Sie uns im Store in der 8. Etage,
+                            Lepsiusstraße 33, 12163 Berlin oder rufen Sie uns an
+                            unter +493079706126
+                        </p>
+                        <p>game_stack_up@gmail.com</p>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-3 p-b-50">
+                        <h4 class="stext-301 cl0 p-b-30">Newsletter</h4>
+
+                        <form action="thanks.html" method="get">
+                            <div class="wrap-input1 w-full p-b-4">
+                                <input
+                                    class="input1 bg-none plh1 stext-107 cl7"
+                                    type="text"
+                                    name="email"
+                                    placeholder="email@example.com"
+                                    required
+                                />
+                                <div class="focus-input1 trans-04"></div>
+                            </div>
+
+                            <div class="p-t-18">
+                                <button
+                                    class="flex-c-m stext-101 cl0 size-103 bg1 bor1 hov-btn2 p-lr-15 trans-04"
+                                    type="submit"
+                                >
+                                    Abonnieren
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="p-t-40">
+                    <div class="flex-c-m flex-w p-b-18">
+                        <a href="#" class="m-all-1">
+                            <img
+                                src="images/icons/icon-pay-01.png"
+                                alt="ICON-PAY"
+                            />
+                        </a>
+
+                        <a href="#" class="m-all-1">
+                            <img
+                                src="images/icons/icon-pay-02.png"
+                                alt="ICON-PAY"
+                            />
+                        </a>
+
+                        <a href="#" class="m-all-1">
+                            <img
+                                src="images/icons/icon-pay-03.png"
+                                alt="ICON-PAY"
+                            />
+                        </a>
+
+                        <a href="#" class="m-all-1">
+                            <img
+                                src="images/icons/icon-pay-04.png"
+                                alt="ICON-PAY"
+                            />
+                        </a>
+
+                        <a href="#" class="m-all-1">
+                            <img
+                                src="images/icons/icon-pay-05.png"
+                                alt="ICON-PAY"
+                            />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Back to top -->
+        <div class="btn-back-to-top" id="myBtn">
+            <span class="symbol-btn-back-to-top">
+                <i class="zmdi zmdi-chevron-up"></i>
+            </span>
+        </div>
+
+        <!-- Cookie Banner -->
+        <div class="cookie-wrapper show">
+            <div>
+                <i class="bx bx-cookie"></i>
+                <h2 style="text-align: center">Cookie-Hinweis</h2>
+            </div>
+            <div class="data">
+                <p>
+                    Diese Website verwendet Cookies, um dein Erlebnis beim
+                    Stöbern und Einkaufen im PC- und Konsolenspiele-Shop zu
+                    verbessern.
+                    <a href="cookie-policy.html">Mehr erfahren...</a>
+                </p>
+            </div>
+            <div class="buttons">
+                <button class="cookie-button" id="acceptBtn">
+                    Ich akzeptiere
+                </button>
+                <button class="cookie-button" id="declineBtn">
+                    Ich lehne ab
+                </button>
+            </div>
+        </div>
+        <!-- End Cookie Banner -->
+
+        <!-- jQuery (via Google CDN) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <!-- Bootstrap (via jsDelivr as Google CDN doesn't host Bootstrap) -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Select2 (via jsDelivr) -->
+        <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+        <!-- Moment.js (via jsDelivr) -->
+        <script src="https://cdn.jsdelivr.net/npm/moment@2.29.4/moment.min.js"></script>
+
+        <!-- DateRangePicker (via jsDelivr) -->
+        <script src="https://cdn.jsdelivr.net/npm/daterangepicker@3.1/daterangepicker.min.js"></script>
+
+        <!-- Slick carousel (via jsDelivr) -->
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="js/slick-custom.js"></script>
+
+        <!-- Animsition (no Google/jQuery CDN – fallback to local or use jsDelivr if needed) -->
+        <script src="vendor/animsition/js/animsition.min.js"></script>
+
+        <!-- Parallax100 (custom lib – fallback to local) -->
+        <script src="vendor/parallax100/parallax100.js"></script>
+
+        <!-- Magnific Popup (via jsDelivr) -->
+        <script src="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js"></script>
+
+        <!-- Isotope (via jsDelivr) -->
+        <script src="https://cdn.jsdelivr.net/npm/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
+
+        <!-- SweetAlert (via jsDelivr) -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert@2.1.2/dist/sweetalert.min.js"></script>
+
+        <!-- Perfect Scrollbar (via jsDelivr) -->
+        <script src="https://cdn.jsdelivr.net/npm/perfect-scrollbar@1.5.5/dist/perfect-scrollbar.min.js"></script>
+
+        <!-- Your custom scripts -->
+        <script src="js/main.js"></script>
+        <script src="js/cookiebanner.js"></script>
+        <script src="js/store.js"></script>
+        <script src="products.js"></script>
+    </body>
+</html>

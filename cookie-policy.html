@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Game Stack Up</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!--===============================================================================================-->
+        <link rel="icon" type="image/png" href="images/icons/favicon.png" />
+        <!--===============================================================================================-->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="vendor/bootstrap/css/bootstrap.min.css"
+        />
+        <!--===============================================================================================-->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="fonts/font-awesome-4.7.0/css/font-awesome.min.css"
+        />
+        <!--===============================================================================================-->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="fonts/iconic/css/material-design-iconic-font.min.css"
+        />
+        <!--===============================================================================================-->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="fonts/linearicons-v1.0.0/icon-font.min.css"
+        />
+        <!--===============================================================================================-->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="vendor/animate/animate.css"
+        />
+        <!--===============================================================================================-->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="vendor/css-hamburgers/hamburgers.min.css"
+        />
+        <!--===============================================================================================-->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="vendor/animsition/css/animsition.min.css"
+        />
+        <!--===============================================================================================-->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="vendor/select2/select2.min.css"
+        />
+        <!--===============================================================================================-->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="vendor/daterangepicker/daterangepicker.css"
+        />
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
+        <!--===============================================================================================-->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="vendor/MagnificPopup/magnific-popup.css"
+        />
+        <!--===============================================================================================-->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="vendor/perfect-scrollbar/perfect-scrollbar.css"
+        />
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="css/util.css" />
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <!--===============================================================================================-->
+    </head>
+    <body class="animsition">
+        <!-- Header -->
+        <header class="header-v4" style="border-bottom: 1px solid gray">
+            <!-- Header desktop -->
+            <div class="container-menu-desktop trans-03">
+                <div class="wrap-menu-desktop">
+                    <nav class="limiter-menu-desktop p-l-45">
+                        <!-- Logo desktop -->
+                        <a href="#" class="logo">
+                            <h3 style="color: #333; text-transform: uppercase">
+                                Game Stack Up
+                            </h3>
+                        </a>
+
+                        <!-- Menu desktop -->
+                        <div class="menu-desktop">
+                            <ul class="main-menu">
+                                <li>
+                                    <a href="index.html">Startseite</a>
+                                </li>
+
+                                <li>
+                                    <a href="product.html">Shop</a>
+                                </li>
+
+                                <li>
+                                    <a href="about.html">Über uns</a>
+                                </li>
+
+                                <li>
+                                    <a href="contact.html">Kontakt</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Icon header -->
+                        <div class="wrap-icon-header flex-w flex-r-m mr-3">
+                            <div
+                                class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart"
+                                data-notify="0"
+                            >
+                                <a href="cart.html">
+                                    <i class="zmdi zmdi-shopping-cart"></i>
+                                </a>
+                            </div>
+
+                            <a
+                                href="favorite.html"
+                                class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti"
+                                data-notify="0"
+                            >
+                                <i class="zmdi zmdi-favorite-outline"></i>
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- Header Mobile -->
+            <div class="wrap-header-mobile">
+                <!-- Logo moblie -->
+                <div class="logo-mobile">
+                    <a href="index.html"
+                        ><h4
+                            style="
+                                text-transform: uppercase;
+                                color: #333;
+                                font-size: 20px;
+                            "
+                        >
+                            Game Stack Up
+                        </h4></a
+                    >
+                </div>
+
+                <!-- Icon header -->
+                <div class="wrap-icon-header flex-w flex-r-m mr-3">
+                    <div
+                        class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart"
+                        data-notify="2"
+                    >
+                        <i class="zmdi zmdi-shopping-cart"></i>
+                    </div>
+
+                    <a
+                        href="#"
+                        class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti"
+                        data-notify="0"
+                    >
+                        <i class="zmdi zmdi-favorite-outline"></i>
+                    </a>
+                </div>
+
+                <!-- Button show menu -->
+                <div class="btn-show-menu-mobile hamburger hamburger--squeeze">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Menu Mobile -->
+            <div class="menu-mobile">
+                <ul class="main-menu-m">
+                    <li>
+                        <a href="index.html">Startseite</a>
+                        <span class="arrow-main-menu-m">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </span>
+                    </li>
+
+                    <li>
+                        <a href="product.html">Shop</a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">Über uns</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <main>
+            <article class="container additional-wrapper">
+                <div class="page__content" style="padding: 20px 0px">
+                    <h1>Cookie-Richtlinie</h1>
+                    <h2>Einleitung</h2>
+                    <p>
+                        Unser Online-Shop für PC- und Konsolenspiele verwendet
+                        Cookies, um dein Nutzungserlebnis zu verbessern. In
+                        dieser Cookie-Richtlinie erklären wir, was Cookies sind,
+                        wie wir sie einsetzen und welche Wahlmöglichkeiten du
+                        hast.
+                    </p>
+
+                    <h2>Was sind Cookies?</h2>
+                    <p>
+                        Cookies sind kleine Textdateien, die durch deinen
+                        Browser auf deinem Gerät gespeichert werden. Sie dienen
+                        dazu, Einstellungen zu merken, Funktionen der Website zu
+                        ermöglichen und Informationen über die Nutzung der Seite
+                        zu sammeln.
+                    </p>
+
+                    <h2>Welche Arten von Cookies verwenden wir?</h2>
+                    <h3>1. Notwendige Cookies</h3>
+                    <p>
+                        Diese Cookies sind unverzichtbar, damit unsere Website
+                        ordnungsgemäß funktioniert. Sie ermöglichen grundlegende
+                        Funktionen wie den Zugriff auf den Warenkorb und einen
+                        sicheren Login.
+                    </p>
+
+                    <h3>2. Leistungsbezogene Cookies</h3>
+                    <p>
+                        Mit diesen Cookies erfassen wir, wie Besucher unsere
+                        Seite nutzen – etwa welche Spielekategorien oder
+                        Angebote besonders beliebt sind. Das hilft uns, unser
+                        Angebot stetig zu verbessern.
+                    </p>
+
+                    <h3>3. Funktionsbezogene Cookies</h3>
+                    <p>
+                        Diese Cookies merken sich deine bevorzugte Sprache,
+                        Plattform (PC oder Konsole) oder Region, um ein
+                        individuelles Einkaufserlebnis im Game-Shop zu bieten.
+                    </p>
+
+                    <h3>4. Marketing-Cookies</h3>
+                    <p>
+                        Diese Cookies unterstützen uns dabei, dir relevante
+                        Werbeanzeigen zu PC- und Konsolenspielen anzuzeigen und
+                        die Wirksamkeit von Werbekampagnen zu analysieren.
+                    </p>
+
+                    <h2>Wie wir Cookies nutzen</h2>
+                    <p>
+                        Wir nutzen Cookies, um dein Einkaufserlebnis im
+                        Spiele-Shop zu optimieren, dein Nutzerverhalten zu
+                        analysieren und dir gezielte Aktionen oder Empfehlungen
+                        zu aktuellen PC- und Konsolentiteln anzuzeigen.
+                    </p>
+
+                    <h2>Verwaltung von Cookies</h2>
+                    <p>
+                        Du kannst Cookies in den Einstellungen deines Browsers
+                        verwalten. Dort kannst du vorhandene Cookies löschen
+                        oder neue blockieren. Bitte beachte, dass das
+                        Deaktivieren von Cookies die Funktionalität unseres
+                        Online-Shops für Spiele einschränken kann.
+                    </p>
+
+                    <h2>Cookies von Drittanbietern</h2>
+                    <p>
+                        In unserem Store setzen auch externe Dienste wie
+                        Analyse-Tools oder Werbepartner Cookies ein. Diese
+                        Drittanbieter unterliegen eigenen
+                        Datenschutzrichtlinien.
+                    </p>
+
+                    <h2>Änderungen dieser Cookie-Richtlinie</h2>
+                    <p>
+                        Wir behalten uns vor, diese Cookie-Richtlinie bei
+                        technischen oder rechtlichen Änderungen zu
+                        aktualisieren. Bitte prüfe die Richtlinie regelmäßig, um
+                        auf dem neuesten Stand zu bleiben.
+                    </p>
+
+                    <h2>Kontakt</h2>
+                    <p>
+                        Wenn du Fragen zur Verwendung von Cookies in unserem
+                        Shop für PC- und Konsolenspiele hast, kannst du uns
+                        jederzeit kontaktieren. Wir helfen dir gerne weiter.
+                    </p>
+                </div>
+            </article>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg3 p-t-75 p-b-32">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-lg-3 p-b-50">
+                        <h4 class="stext-301 cl0 p-b-30">Kategorien</h4>
+
+                        <ul>
+                            <li class="p-b-10">
+                                <a
+                                    href="#"
+                                    class="stext-107 cl7 hov-cl1 trans-04"
+                                >
+                                    PC-Spiele
+                                </a>
+                            </li>
+
+                            <li class="p-b-10">
+                                <a
+                                    href="#"
+                                    class="stext-107 cl7 hov-cl1 trans-04"
+                                >
+                                    Konsolen-Spiele
+                                </a>
+                            </li>
+
+                            <li class="p-b-10">
+                                <a
+                                    href="#"
+                                    class="stext-107 cl7 hov-cl1 trans-04"
+                                >
+                                    Zubehör & Controller
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-3 p-b-50">
+                        <h4 class="stext-301 cl0 p-b-30">Hilfe</h4>
+
+                        <ul>
+                            <li class="p-b-10">
+                                <a
+                                    href="index.html"
+                                    class="stext-107 cl7 hov-cl1 trans-04"
+                                >
+                                    Startseite
+                                </a>
+                            </li>
+
+                            <li class="p-b-10">
+                                <a
+                                    href="terms-of-use.html"
+                                    class="stext-107 cl7 hov-cl1 trans-04"
+                                >
+                                    Nutzungsbedingungen
+                                </a>
+                            </li>
+
+                            <li class="p-b-10">
+                                <a
+                                    href="cookie-policy.html"
+                                    class="stext-107 cl7 hov-cl1 trans-04"
+                                >
+                                    Cookie-Richtlinie
+                                </a>
+                            </li>
+
+                            <li class="p-b-10">
+                                <a
+                                    href="privacy-policy.html"
+                                    class="stext-107 cl7 hov-cl1 trans-04"
+                                >
+                                    Datenschutz
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-3 p-b-50">
+                        <h4 class="stext-301 cl0 p-b-30">KONTAKT</h4>
+
+                        <p class="stext-107 cl7 size-201">
+                            Fragen? Besuchen Sie uns im Store in der 8. Etage,
+                            Lepsiusstraße 33, 12163 Berlin oder rufen Sie uns an
+                            unter +493079706126
+                        </p>
+                        <p>game_stack_up@gmail.com</p>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-3 p-b-50">
+                        <h4 class="stext-301 cl0 p-b-30">Newsletter</h4>
+
+                        <form action="thanks.html" method="get">
+                            <div class="wrap-input1 w-full p-b-4">
+                                <input
+                                    class="input1 bg-none plh1 stext-107 cl7"
+                                    type="text"
+                                    name="email"
+                                    placeholder="email@example.com"
+                                    required
+                                />
+                                <div class="focus-input1 trans-04"></div>
+                            </div>
+
+                            <div class="p-t-18">
+                                <button
+                                    class="flex-c-m stext-101 cl0 size-103 bg1 bor1 hov-btn2 p-lr-15 trans-04"
+                                    type="submit"
+                                >
+                                    Abonnieren
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="p-t-40">
+                    <div class="flex-c-m flex-w p-b-18">
+                        <a href="#" class="m-all-1">
+                            <img
+                                src="images/icons/icon-pay-01.png"
+                                alt="ICON-PAY"
+                            />
+                        </a>
+
+                        <a href="#" class="m-all-1">
+                            <img
+                                src="images/icons/icon-pay-02.png"
+                                alt="ICON-PAY"
+                            />
+                        </a>
+
+                        <a href="#" class="m-all-1">
+                            <img
+                                src="images/icons/icon-pay-03.png"
+                                alt="ICON-PAY"
+                            />
+                        </a>
+
+                        <a href="#" class="m-all-1">
+                            <img
+                                src="images/icons/icon-pay-04.png"
+                                alt="ICON-PAY"
+                            />
+                        </a>
+
+                        <a href="#" class="m-all-1">
+                            <img
+                                src="images/icons/icon-pay-05.png"
+                                alt="ICON-PAY"
+                            />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Back to top -->
+        <div class="btn-back-to-top" id="myBtn">
+            <span class="symbol-btn-back-to-top">
+                <i class="zmdi zmdi-chevron-up"></i>
+            </span>
+        </div>
+
+        <!-- Cookie Banner -->
+        <div class="cookie-wrapper show">
+            <div>
+                <i class="bx bx-cookie"></i>
+                <h2 style="text-align: center">Cookie-Hinweis</h2>
+            </div>
+            <div class="data">
+                <p>
+                    Diese Website verwendet Cookies, um dein Erlebnis beim
+                    Stöbern und Einkaufen im PC- und Konsolenspiele-Shop zu
+                    verbessern.
+                    <a href="cookie-policy.html">Mehr erfahren...</a>
+                </p>
+            </div>
+            <div class="buttons">
+                <button class="cookie-button" id="acceptBtn">
+                    Ich akzeptiere
+                </button>
+                <button class="cookie-button" id="declineBtn">
+                    Ich lehne ab
+                </button>
+            </div>
+        </div>
+        <!-- End Cookie Banner -->
+
+        <!-- jQuery (via Google CDN) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <!-- Bootstrap (via jsDelivr as Google CDN doesn't host Bootstrap) -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Select2 (via jsDelivr) -->
+        <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+        <!-- Moment.js (via jsDelivr) -->
+        <script src="https://cdn.jsdelivr.net/npm/moment@2.29.4/moment.min.js"></script>
+
+        <!-- DateRangePicker (via jsDelivr) -->
+        <script src="https://cdn.jsdelivr.net/npm/daterangepicker@3.1/daterangepicker.min.js"></script>
+
+        <!-- Slick carousel (via jsDelivr) -->
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="js/slick-custom.js"></script>
+
+        <!-- Animsition (no Google/jQuery CDN – fallback to local or use jsDelivr if needed) -->
+        <script src="vendor/animsition/js/animsition.min.js"></script>
+
+        <!-- Parallax100 (custom lib – fallback to local) -->
+        <script src="vendor/parallax100/parallax100.js"></script>
+
+        <!-- Magnific Popup (via jsDelivr) -->
+        <script src="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js"></script>
+
+        <!-- Isotope (via jsDelivr) -->
+        <script src="https://cdn.jsdelivr.net/npm/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
+
+        <!-- SweetAlert (via jsDelivr) -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert@2.1.2/dist/sweetalert.min.js"></script>
+
+        <!-- Perfect Scrollbar (via jsDelivr) -->
+        <script src="https://cdn.jsdelivr.net/npm/perfect-scrollbar@1.5.5/dist/perfect-scrollbar.min.js"></script>
+
+        <!-- Your custom scripts -->
+        <script src="js/main.js"></script>
+        <script src="js/cookiebanner.js"></script>
+        <script src="js/store.js"></script>
+        <script src="products.js"></script>
+    </body>
+</html>

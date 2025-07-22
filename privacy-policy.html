@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Game Stack Up</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!--===============================================================================================-->
+        <link rel="icon" type="image/png" href="images/icons/favicon.png" />
+        <!--===============================================================================================-->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="vendor/bootstrap/css/bootstrap.min.css"
+        />
+        <!--===============================================================================================-->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="fonts/font-awesome-4.7.0/css/font-awesome.min.css"
+        />
+        <!--===============================================================================================-->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="fonts/iconic/css/material-design-iconic-font.min.css"
+        />
+        <!--===============================================================================================-->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="fonts/linearicons-v1.0.0/icon-font.min.css"
+        />
+        <!--===============================================================================================-->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="vendor/animate/animate.css"
+        />
+        <!--===============================================================================================-->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="vendor/css-hamburgers/hamburgers.min.css"
+        />
+        <!--===============================================================================================-->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="vendor/animsition/css/animsition.min.css"
+        />
+        <!--===============================================================================================-->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="vendor/select2/select2.min.css"
+        />
+        <!--===============================================================================================-->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="vendor/daterangepicker/daterangepicker.css"
+        />
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
+        <!--===============================================================================================-->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="vendor/MagnificPopup/magnific-popup.css"
+        />
+        <!--===============================================================================================-->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="vendor/perfect-scrollbar/perfect-scrollbar.css"
+        />
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="css/util.css" />
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <!--===============================================================================================-->
+    </head>
+    <body class="animsition">
+        <!-- Header -->
+        <header class="header-v4" style="border-bottom: 1px solid gray">
+            <!-- Header desktop -->
+            <div class="container-menu-desktop trans-03">
+                <div class="wrap-menu-desktop">
+                    <nav class="limiter-menu-desktop p-l-45">
+                        <!-- Logo desktop -->
+                        <a href="#" class="logo">
+                            <h3 style="color: #333; text-transform: uppercase">
+                                Game Stack Up
+                            </h3>
+                        </a>
+
+                        <!-- Menu desktop -->
+                        <div class="menu-desktop">
+                            <ul class="main-menu">
+                                <li>
+                                    <a href="index.html">Startseite</a>
+                                </li>
+
+                                <li>
+                                    <a href="product.html">Shop</a>
+                                </li>
+
+                                <li>
+                                    <a href="about.html">Über uns</a>
+                                </li>
+
+                                <li>
+                                    <a href="contact.html">Kontakt</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Icon header -->
+                        <div class="wrap-icon-header flex-w flex-r-m mr-3">
+                            <div
+                                class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart"
+                                data-notify="0"
+                            >
+                                <a href="cart.html">
+                                    <i class="zmdi zmdi-shopping-cart"></i>
+                                </a>
+                            </div>
+
+                            <a
+                                href="favorite.html"
+                                class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti"
+                                data-notify="0"
+                            >
+                                <i class="zmdi zmdi-favorite-outline"></i>
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- Header Mobile -->
+            <div class="wrap-header-mobile">
+                <!-- Logo moblie -->
+                <div class="logo-mobile">
+                    <a href="index.html"
+                        ><h4
+                            style="
+                                text-transform: uppercase;
+                                color: #333;
+                                font-size: 20px;
+                            "
+                        >
+                            Game Stack Up
+                        </h4></a
+                    >
+                </div>
+
+                <!-- Icon header -->
+                <div class="wrap-icon-header flex-w flex-r-m mr-3">
+                    <div
+                        class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart"
+                        data-notify="2"
+                    >
+                        <i class="zmdi zmdi-shopping-cart"></i>
+                    </div>
+
+                    <a
+                        href="#"
+                        class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti"
+                        data-notify="0"
+                    >
+                        <i class="zmdi zmdi-favorite-outline"></i>
+                    </a>
+                </div>
+
+                <!-- Button show menu -->
+                <div class="btn-show-menu-mobile hamburger hamburger--squeeze">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Menu Mobile -->
+            <div class="menu-mobile">
+                <ul class="main-menu-m">
+                    <li>
+                        <a href="index.html">Startseite</a>
+                        <span class="arrow-main-menu-m">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </span>
+                    </li>
+
+                    <li>
+                        <a href="product.html">Shop</a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">Über uns</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <main>
+            <article class="container additional-wrapper">
+                <div class="page__content" style="padding: 20px 0px">
+                    <h1>Datenschutzerklärung</h1>
+                    <h2>Einleitung</h2>
+                    <p>
+                        Der Schutz deiner Privatsphäre und persönlichen Daten
+                        ist uns als Anbieter eines Online-Shops für PC- und
+                        Konsolenspiele besonders wichtig. In dieser
+                        Datenschutzerklärung erfährst du, wie wir deine Daten
+                        erfassen, verwenden und schützen. Durch die Nutzung
+                        unserer Website und Services erklärst du dich mit den
+                        nachfolgend beschriebenen Praktiken einverstanden.
+                    </p>
+
+                    <h2>Welche Daten wir erfassen</h2>
+                    <h3>1. Persönliche Daten</h3>
+                    <p>
+                        Beim Kauf von PC- und Konsolenspielen in unserem Shop
+                        erfassen wir möglicherweise personenbezogene Daten wie
+                        deinen Vor- und Nachnamen, Kontaktdaten sowie weitere
+                        Informationen, die du freiwillig angibst – zum Beispiel
+                        bei der Registrierung, im Bestellvorgang oder bei einer
+                        Anfrage per E-Mail.
+                    </p>
+
+                    <h3>2. Nutzungsdaten</h3>
+                    <p>
+                        Wir erfassen Informationen über deine Interaktion mit
+                        unserer Website. Dazu gehören unter anderem IP-Adresse,
+                        Browsertyp, Betriebssystem, besuchte Seiten sowie
+                        Zeitstempel. Diese Daten helfen uns, das Angebot für
+                        Gamer weiter zu optimieren.
+                    </p>
+
+                    <h3>3. Cookies und ähnliche Technologien</h3>
+                    <p>
+                        Unser Shop verwendet Cookies und ähnliche Technologien,
+                        um deine Benutzererfahrung zu verbessern. Cookies sind
+                        kleine Dateien, die auf deinem Gerät gespeichert werden,
+                        um z. B. Einstellungen zu merken oder die Seitennutzung
+                        zu analysieren. Du kannst deine Cookie-Einstellungen im
+                        Browser verwalten. Bitte beachte, dass eine
+                        Deaktivierung die Funktionalität einschränken kann.
+                    </p>
+
+                    <h2>Wie wir deine Daten nutzen</h2>
+                    <h3>1. Bereitstellung unserer Dienste</h3>
+                    <p>
+                        Wir verwenden deine Daten, um unsere Services im Bereich
+                        PC- und Konsolenspiele bereitzustellen – etwa zur
+                        Abwicklung von Bestellungen, zur Bearbeitung von
+                        Anfragen oder zur Personalisierung deines
+                        Spielerlebnisses.
+                    </p>
+
+                    <h3>2. Kommunikation</h3>
+                    <p>
+                        Deine Kontaktdaten nutzen wir, um dich über Aktionen,
+                        Updates und Angebote im Zusammenhang mit unserem
+                        Game-Shop zu informieren. Du kannst diese Mitteilungen
+                        jederzeit abbestellen.
+                    </p>
+
+                    <h3>3. Analyse und Optimierung</h3>
+                    <p>
+                        Mit Hilfe von Nutzungsdaten und Cookies analysieren wir
+                        das Verhalten auf unserer Seite, um unser Angebot
+                        gezielt für Gamer zu verbessern und technische Abläufe
+                        zu optimieren.
+                    </p>
+
+                    <h3>4. Gesetzliche Verpflichtungen</h3>
+                    <p>
+                        Deine Daten können zur Einhaltung gesetzlicher Vorgaben,
+                        zur Klärung von Streitigkeiten oder zur Durchsetzung
+                        unserer Bedingungen verwendet werden. Bei rechtlicher
+                        Verpflichtung geben wir Daten an die zuständigen
+                        Behörden weiter.
+                    </p>
+
+                    <h2>Weitergabe von Daten</h2>
+                    <h3>1. Dienstleister</h3>
+                    <p>
+                        Wir geben deine Daten gegebenenfalls an
+                        vertrauenswürdige Dienstleister weiter, die uns bei der
+                        Bereitstellung unseres Game-Shops unterstützen. Diese
+                        Dienstleister dürfen deine Daten ausschließlich im
+                        Rahmen unserer Anweisungen verarbeiten.
+                    </p>
+
+                    <h3>2. Unternehmensübertragungen</h3>
+                    <p>
+                        Im Fall einer Fusion, Übernahme oder Umstrukturierung
+                        können deine Daten an das übernehmende Unternehmen
+                        übertragen werden. Du wirst darüber informiert, und
+                        deine Rechte bleiben gewahrt.
+                    </p>
+
+                    <h3>3. Rechtliche Anforderungen</h3>
+                    <p>
+                        Wenn gesetzlich erforderlich oder durch Behörden
+                        verlangt, können wir personenbezogene Daten offenlegen.
+                    </p>
+
+                    <h2>Datensicherheit</h2>
+                    <p>
+                        Wir treffen angemessene technische und organisatorische
+                        Maßnahmen, um deine persönlichen Daten zu schützen.
+                        Dennoch ist keine Übertragung im Internet vollkommen
+                        sicher. Bitte verwende sichere Passwörter und teile
+                        sensible Informationen nur über sichere Kanäle.
+                    </p>
+
+                    <h2>Deine Rechte</h2>
+                    <h3>1. Auskunft und Berichtigung</h3>
+                    <p>
+                        Du hast das Recht, Auskunft über deine gespeicherten
+                        Daten zu erhalten und unrichtige Informationen
+                        korrigieren zu lassen. Kontaktiere uns hierfür gerne.
+                    </p>
+
+                    <h3>2. Löschung</h3>
+                    <p>
+                        Du kannst die Löschung deiner Daten verlangen, sofern
+                        keine gesetzlichen Aufbewahrungspflichten bestehen.
+                    </p>
+
+                    <h3>3. Einschränkung der Verarbeitung</h3>
+                    <p>
+                        In bestimmten Fällen hast du das Recht, eine
+                        Einschränkung der Verarbeitung zu verlangen,
+                        beispielsweise bei Unstimmigkeiten zur Richtigkeit
+                        deiner Daten.
+                    </p>
+
+                    <h3>4. Datenübertragbarkeit</h3>
+                    <p>
+                        Auf Wunsch stellen wir dir deine personenbezogenen Daten
+                        in einem strukturierten, maschinenlesbaren Format zur
+                        Verfügung, das eine Übertragung zu einem anderen
+                        Anbieter ermöglicht.
+                    </p>
+
+                    <h3>5. Widerspruch</h3>
+                    <p>
+                        Du kannst der Verarbeitung deiner Daten für
+                        Direktwerbung oder auf Grundlage berechtigter Interessen
+                        widersprechen. Wir werden deine Entscheidung
+                        respektieren.
+                    </p>
+
+                    <h2>Änderungen an dieser Datenschutzerklärung</h2>
+                    <p>
+                        Wir behalten uns vor, diese Datenschutzerklärung bei
+                        Änderungen technischer oder rechtlicher Art zu
+                        aktualisieren. Bitte informiere dich regelmäßig über den
+                        aktuellen Stand.
+                    </p>
+
+                    <h2>Kontakt</h2>
+                    <p>
+                        Bei Fragen oder Anliegen zur Verarbeitung deiner Daten
+                        oder zu dieser Datenschutzerklärung, kontaktiere uns
+                        bitte. Wir helfen dir gerne weiter.
+                    </p>
+                </div>
+            </article>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg3 p-t-75 p-b-32">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-lg-3 p-b-50">
+                        <h4 class="stext-301 cl0 p-b-30">Kategorien</h4>
+
+                        <ul>
+                            <li class="p-b-10">
+                                <a
+                                    href="#"
+                                    class="stext-107 cl7 hov-cl1 trans-04"
+                                >
+                                    PC-Spiele
+                                </a>
+                            </li>
+
+                            <li class="p-b-10">
+                                <a
+                                    href="#"
+                                    class="stext-107 cl7 hov-cl1 trans-04"
+                                >
+                                    Konsolen-Spiele
+                                </a>
+                            </li>
+
+                            <li class="p-b-10">
+                                <a
+                                    href="#"
+                                    class="stext-107 cl7 hov-cl1 trans-04"
+                                >
+                                    Zubehör & Controller
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-3 p-b-50">
+                        <h4 class="stext-301 cl0 p-b-30">Hilfe</h4>
+
+                        <ul>
+                            <li class="p-b-10">
+                                <a
+                                    href="index.html"
+                                    class="stext-107 cl7 hov-cl1 trans-04"
+                                >
+                                    Startseite
+                                </a>
+                            </li>
+
+                            <li class="p-b-10">
+                                <a
+                                    href="terms-of-use.html"
+                                    class="stext-107 cl7 hov-cl1 trans-04"
+                                >
+                                    Nutzungsbedingungen
+                                </a>
+                            </li>
+
+                            <li class="p-b-10">
+                                <a
+                                    href="cookie-policy.html"
+                                    class="stext-107 cl7 hov-cl1 trans-04"
+                                >
+                                    Cookie-Richtlinie
+                                </a>
+                            </li>
+
+                            <li class="p-b-10">
+                                <a
+                                    href="privacy-policy.html"
+                                    class="stext-107 cl7 hov-cl1 trans-04"
+                                >
+                                    Datenschutz
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-3 p-b-50">
+                        <h4 class="stext-301 cl0 p-b-30">KONTAKT</h4>
+
+                        <p class="stext-107 cl7 size-201">
+                            Fragen? Besuchen Sie uns im Store in der 8. Etage,
+                            Lepsiusstraße 33, 12163 Berlin oder rufen Sie uns an
+                            unter +493079706126
+                        </p>
+                        <p>game_stack_up@gmail.com</p>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-3 p-b-50">
+                        <h4 class="stext-301 cl0 p-b-30">Newsletter</h4>
+
+                        <form action="thanks.html" method="get">
+                            <div class="wrap-input1 w-full p-b-4">
+                                <input
+                                    class="input1 bg-none plh1 stext-107 cl7"
+                                    type="text"
+                                    name="email"
+                                    placeholder="email@example.com"
+                                    required
+                                />
+                                <div class="focus-input1 trans-04"></div>
+                            </div>
+
+                            <div class="p-t-18">
+                                <button
+                                    class="flex-c-m stext-101 cl0 size-103 bg1 bor1 hov-btn2 p-lr-15 trans-04"
+                                    type="submit"
+                                >
+                                    Abonnieren
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="p-t-40">
+                    <div class="flex-c-m flex-w p-b-18">
+                        <a href="#" class="m-all-1">
+                            <img
+                                src="images/icons/icon-pay-01.png"
+                                alt="ICON-PAY"
+                            />
+                        </a>
+
+                        <a href="#" class="m-all-1">
+                            <img
+                                src="images/icons/icon-pay-02.png"
+                                alt="ICON-PAY"
+                            />
+                        </a>
+
+                        <a href="#" class="m-all-1">
+                            <img
+                                src="images/icons/icon-pay-03.png"
+                                alt="ICON-PAY"
+                            />
+                        </a>
+
+                        <a href="#" class="m-all-1">
+                            <img
+                                src="images/icons/icon-pay-04.png"
+                                alt="ICON-PAY"
+                            />
+                        </a>
+
+                        <a href="#" class="m-all-1">
+                            <img
+                                src="images/icons/icon-pay-05.png"
+                                alt="ICON-PAY"
+                            />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Back to top -->
+        <div class="btn-back-to-top" id="myBtn">
+            <span class="symbol-btn-back-to-top">
+                <i class="zmdi zmdi-chevron-up"></i>
+            </span>
+        </div>
+
+        <!-- Cookie Banner -->
+        <div class="cookie-wrapper show">
+            <div>
+                <i class="bx bx-cookie"></i>
+                <h2 style="text-align: center">Cookie-Hinweis</h2>
+            </div>
+            <div class="data">
+                <p>
+                    Diese Website verwendet Cookies, um dein Erlebnis beim
+                    Stöbern und Einkaufen im PC- und Konsolenspiele-Shop zu
+                    verbessern.
+                    <a href="cookie-policy.html">Mehr erfahren...</a>
+                </p>
+            </div>
+            <div class="buttons">
+                <button class="cookie-button" id="acceptBtn">
+                    Ich akzeptiere
+                </button>
+                <button class="cookie-button" id="declineBtn">
+                    Ich lehne ab
+                </button>
+            </div>
+        </div>
+        <!-- End Cookie Banner -->
+
+        <!-- jQuery (via Google CDN) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <!-- Bootstrap (via jsDelivr as Google CDN doesn't host Bootstrap) -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Select2 (via jsDelivr) -->
+        <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+        <!-- Moment.js (via jsDelivr) -->
+        <script src="https://cdn.jsdelivr.net/npm/moment@2.29.4/moment.min.js"></script>
+
+        <!-- DateRangePicker (via jsDelivr) -->
+        <script src="https://cdn.jsdelivr.net/npm/daterangepicker@3.1/daterangepicker.min.js"></script>
+
+        <!-- Slick carousel (via jsDelivr) -->
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="js/slick-custom.js"></script>
+
+        <!-- Animsition (no Google/jQuery CDN – fallback to local or use jsDelivr if needed) -->
+        <script src="vendor/animsition/js/animsition.min.js"></script>
+
+        <!-- Parallax100 (custom lib – fallback to local) -->
+        <script src="vendor/parallax100/parallax100.js"></script>
+
+        <!-- Magnific Popup (via jsDelivr) -->
+        <script src="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js"></script>
+
+        <!-- Isotope (via jsDelivr) -->
+        <script src="https://cdn.jsdelivr.net/npm/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
+
+        <!-- SweetAlert (via jsDelivr) -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert@2.1.2/dist/sweetalert.min.js"></script>
+
+        <!-- Perfect Scrollbar (via jsDelivr) -->
+        <script src="https://cdn.jsdelivr.net/npm/perfect-scrollbar@1.5.5/dist/perfect-scrollbar.min.js"></script>
+
+        <!-- Your custom scripts -->
+        <script src="js/main.js"></script>
+        <script src="js/cookiebanner.js"></script>
+        <script src="js/store.js"></script>
+        <script src="products.js"></script>
+    </body>
+</html>
