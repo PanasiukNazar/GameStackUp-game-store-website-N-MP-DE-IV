@@ -3441,19 +3441,8 @@ header h2 {
   border-bottom: 1px solid #eee;
 }
 
-/* Hover image appears on hover */
-.product-img:hover .default-img {
-  opacity: 0;
-}
 
-.product-img .hover-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  opacity: 0;
-  transition: opacity 0.4s ease;
-}
+
 
 .product-img:hover .hover-img {
   opacity: 1;
@@ -3577,4 +3566,7 @@ header h2 {
   .discount-price {
     font-size: 1.25rem;
   }
+}
+.block1-txt-child1 span {
+  color: #fff;
 }
